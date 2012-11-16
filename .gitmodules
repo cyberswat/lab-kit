@@ -1,0 +1,9 @@
+[submodule "wp"]
+	path = wp
+	url = https://github.com/WordPress/WordPress.git
+[submodule "reactor"]
+	path = content/mu-plugins/reactor
+	url = https://github.com/blueriotlabs/reactor.git
+[submodule "inertia"]
+	path = content/themes/inertia
+	url = https://github.com/blueriotlabs/inertia.git
