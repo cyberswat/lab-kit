@@ -5,7 +5,7 @@ Standard project layout for most BRL WordPress Projects.
 
 ### Setup Instructions.
 
-* Clone the repository <code>git clone git://github.com/blueriotlabs/lab-kit.git .</code>
+* Clone the repository <code>git clone https://github.com/blueriotlabs/lab-kit.git .</code>
 * Initialize all the submodules <code>git submodule update --init --recursive</code>
 * Remove the Lab-Kit remote. <code>git remote rm origin</code>
 * Add the remote for your new project (pulled from the Beanstalk project) <code>git remote add origin [url]</code>
