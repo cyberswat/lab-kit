@@ -80,7 +80,8 @@ $table_prefix  = 'wp_';
 // Language
 // Leave blank for American English
 // ================================
-define( 'WPLANG', '' );
+if ( !defined( 'WPLANG' ) )
+	define( 'WPLANG', '' );
 
 // ===========
 // Hide errors
@@ -98,6 +99,53 @@ if ( defined( 'BRL_DEV' ) && BRL_DEV ) {
 	if ( !defined( 'SAVEQUERIES' ) )
 		define( 'SAVEQUERIES', true );
 }
+
+// =====================================
+// Change Autosave Interval - in seconds
+// =====================================
+if ( !defined( 'AUTOSAVE_INTERVAL' ) )
+	define('AUTOSAVE_INTERVAL', 240 );
+	
+// ==============================================================
+// Configure Post Revisions - false if you don't want to save any
+// ==============================================================
+if ( !defined( 'WP_POST_REVISIONS' ) )
+	define( 'WP_POST_REVISIONS', 3 ); // or false
+	
+// ========================================
+// Remove Trash - In days, WP default is 30
+// ========================================
+define( 'EMPTY_TRASH_DAYS', 60 );
+
+// =========================
+// Increase PHP Memory Limit
+// =========================
+if ( !defined( 'WP_MEMORY_LIMIT' ) )
+	define( 'WP_MEMORY_LIMIT', '128M' );
+	
+// =============================================
+// Dis-Allow Plugin / Theme - Editing / Updating
+// =============================================
+if ( !defined( 'DISALLOW_FILE_EDIT' ) ) // editor
+	define('DISALLOW_FILE_EDIT', true);
+if ( !defined( 'DISALLOW_FILE_MODS' ) ) // updates
+	define( 'DISALLOW_FILE_MODS', true );
+	
+// =====================================
+// WP - Core only updates the core files
+// No Akisemet or Hello Dolly
+// =====================================
+if ( !defined( 'CORE_UPGRADE_SKIP_NEW_BUNDLED' ) )
+	define( 'CORE_UPGRADE_SKIP_NEW_BUNDLED', true );
+	
+// ===========================================
+// Override default permissions
+// If you want allow direct plugin downloading
+// ===========================================
+if ( !defined( 'FS_CHMOD_DIR' ) )
+	define( 'FS_CHMOD_DIR', ( 0755 & ~ umask() ) );
+if ( !defined( 'FS_CHMOD_FILE' ) )
+	define( 'FS_CHMOD_FILE', ( 0644 & ~ umask() ) );
 
 // ======================================
 // Load a Memcached config if we have one
