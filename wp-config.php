@@ -98,6 +98,8 @@ if ( defined( 'BRL_DEV' ) && BRL_DEV ) {
 	define( 'WP_DEBUG', true );
 	if ( !defined( 'SAVEQUERIES' ) )
 		define( 'SAVEQUERIES', true );
+	if ( !defined( 'SCRIPT_DEBUG' ) )
+		define('SCRIPT_DEBUG', true);
 }
 
 // =====================================
