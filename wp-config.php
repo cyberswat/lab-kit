@@ -2,7 +2,7 @@
 /**
  * Default WordPress Config
  *
- * @version 1.2
+ * @version 1.3
  * @author Blue Riot Labs <info@blueriotlabs.com>
  * @copyright Copyright (c) 2010 - 2012, Blue Riot Labs
  * @link http://blueriotlabs.com/resources/lab-kit
