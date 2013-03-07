@@ -1,11 +1,104 @@
-# Compiled source #
-###################
-*.com
-*.class
-*.dll
+# WordPress and the like that don't need tracked #
+##################################################
+
+*~
+.svn
+.cvs
+.git
+.listing
+*.bak
+*.swp
+plugins/wp-file-cache/cache
+cache
+_wpeprivate
+.cache
+temp
+tmp
+*.tmp
+imagecache*
+uploads*
+*_backup
+gt-cache
+ics-importer-cache
+wp-config.php
+wp-config-sample.php
+wp-content/w3tc*
+wp-content/w3-*
+wp-content/plugins/wpengine-snapshot/snapshots/*
+wp-content/uploads/snapshots
+wp-content/themes/thesis*/custom/cache
+wp-content/themes/thesis*/lib/scripts/cache
+wp-content/themes/*/cache
+wp-content/plugins/*/cache
+wp-content/w3tc-bak
+wp-content/cache
+wp-content/advanced-cache.php
+wp-content/wp-cache-config.php
+wp-content/backup*
+wp-content/backup-db
+wp-content/backups
+wp-content/temp*
+wp-content/upgrade/*
+wp-content/uploads
+wp-content/uploads/
+wp-content/blogs.dir/*/*
+pclzip-*
+
+# Sitemap #
+sitemap.xml
+sitemap.xml.gz
+
+# WordPress debugging files #
+log.txt
+debug.log
+
+# Gallaries in various places #
+gallery/*
+wp-content/gallery/*
+wp-content/album/*
+
+# Found in 'sneakernews' - probably just a backup but never going to be good to include #
+wp-content/plugins/plugins
+
+# Found in the root of pod-1009 #
+.a
+
+# Forum software we probably shouldn't support anyway #
+forum/*
+
+# Compiled source - known large file types #
+############################################
+*.hqx
+*.bin
 *.exe
-*.o
-*.so
+*.dll
+*.deb
+*.img
+*.msi
+*.msp
+*.msm
+*.mid
+*.midi
+*.kar
+*.mp3
+*.ogg
+*.m4a
+*.ra
+*.3gpp
+*.3gp
+*.mp4
+*.mpeg
+*.mpg
+*.mov
+*.webm
+*.flv
+*.m4v
+*.mng
+*.asx
+*.asf
+*.wmv
+*.avi
+*.tgz
 
 # Packages #
 ############
@@ -39,6 +132,10 @@ Thumbs.db
 
 # BRL Non-Tracked Files #
 #########################
-#.htaccess
+.htaccess
+license.txt
+readme.html
+
+my-config.php
 dev-config.php
 local-config.php
