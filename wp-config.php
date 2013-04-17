@@ -16,8 +16,8 @@
 // ===========================================
 // Load dev/local database info and parameters
 // ===========================================
-if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {
-	include( dirname( __FILE__ ) . '/local-config.php' );
+if ( file_exists( dirname( __FILE__ ) . '/my-config.php' ) ) {
+	include( dirname( __FILE__ ) . '/my-config.php' );
 } elseif ( file_exists( dirname( __FILE__ ) . '/dev-config.php' ) ) {
 	include( dirname( __FILE__ ) . '/dev-config.php' );
 }
