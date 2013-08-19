@@ -7,6 +7,10 @@
 [submodule "inertia"]
 	path = content/themes/inertia
 	url = https://github.com/blueriotlabs/inertia.git
+[submodule "roots"]
+	path = content/themes/roots
+	url = https://github.com/retlehs/roots.git
 [submodule "wordpress-seo"]
 	path = content/plugins/wordpress-seo
 	url = https://github.com/jdevalk/wordpress-seo.git
+
