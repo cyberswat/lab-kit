@@ -13,4 +13,3 @@
 [submodule "wordpress-seo"]
 	path = content/plugins/wordpress-seo
 	url = https://github.com/jdevalk/wordpress-seo.git
-
